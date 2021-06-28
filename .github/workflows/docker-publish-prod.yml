@@ -1,8 +1,10 @@
 name: Docker publish Prod
 
 on:
-  push:
-    branches: [master]
+  repository_dispatch:
+  workflow_dispatch:
+#  push:
+#    branches: [master]
 
 env:
   IMAGE_NAME: jibber-jabber-users-prod
